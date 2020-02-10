@@ -26,6 +26,6 @@ This project requires [Node.js](https://nodejs.org/en/).
 
 ## Author
 
-Sergei Kudinov
-sergei@adaltas
+Sergei Kudinov   
+sergei@adaltas   
 Developer and Data Engineer at [Adaltas](https://www.adaltas.com/)
