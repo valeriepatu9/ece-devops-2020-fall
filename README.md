@@ -4,6 +4,7 @@ Materials for the DevOps course at the ECE.
 
 Modules:
 - Introduction to DevOps
+- Git & SCM
 - ...
 
 ## Usage
