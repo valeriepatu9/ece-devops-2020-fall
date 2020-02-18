@@ -109,3 +109,23 @@ Read this [article on Medium](https://medium.com/datadriveninvestor/git-rebase-v
 - Ask for your changes to be added to the official code - [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
 
 gatsby-slide
+
+# Your work
+
+1. [Duplicate a repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository)
+
+2. Try commands using their options:
+
+- `git status`
+- `git log`
+- `git commit`
+- `git tag`
+- `git branch`
+- `git push`
+- `git fetch`
+- `git pull`
+- `git checkout`
+- [Merge](https://git-scm.com/docs/git-merge)
+- [Rebase](https://git-scm.com/docs/git-rebase)
+- `git stash`
+- `git squash`
