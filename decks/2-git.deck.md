@@ -15,6 +15,8 @@ title: Git & SCM
 
 A project at the end of the course.
 
+gatsby-slide
+
 # Source Control Management (SCM)
 
 - History
@@ -23,6 +25,8 @@ A project at the end of the course.
   - Git in 2005
 - Teamwork → Organisation
 - May have seen [«Mercurial SCM»](https://www.mercurial-scm.org/) or [«Tortoise SVN»](https://tortoisesvn.net/)
+
+gatsby-slide
 
 # What do you manage ?
 
@@ -33,6 +37,8 @@ A project at the end of the course.
 - Manage change requests
 - Keep track of changes and its authors
 - Have multiple people working on your project
+
+gatsby-slide
 
 # Core concepts of Git
 
@@ -46,6 +52,8 @@ Learn git - https://git-scm.com/doc
 - Retrieving changes from the repo is **pulling**
 - Sending changes to the repo is **pushing**
 - When choosing what to commit, files are **staged**
+
+gatsby-slide
 
 # Tags
 
@@ -61,6 +69,8 @@ So far:
 - Easier to identify the versions
 - You have to **push** the tags
 
+gatsby-slide
+
 # The source tree has brunches
 
 - **Branches** - independent set of commits
@@ -73,6 +83,8 @@ So far:
     - To develop an independent feature
 - Create branches or switch between them with `git branch`
 
+gatsby-slide
+
 # Merge & conflicts
 
 - Branches can be merged to have all the changes in only one branch
@@ -82,6 +94,8 @@ So far:
   - Cherrypick the changes (can be quite long)
   - Abandon your changes (and put them back later)
   - Work on the latest commit (git pull) and have a good task repartition
+
+gatsby-slide
 
 # Merge vs Rebase
 
@@ -93,3 +107,5 @@ Read this [article on Medium](https://medium.com/datadriveninvestor/git-rebase-v
 - **Fork** the project on your account
 - Work on a change on your fork
 - Ask for your changes to be added to the official code - [pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)
+
+gatsby-slide
