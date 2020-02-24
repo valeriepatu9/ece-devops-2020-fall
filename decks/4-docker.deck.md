@@ -116,8 +116,70 @@ Types:
 - bind mount - https://docs.docker.com/storage/bind-mounts/
 - tmpfs mount - https://docs.docker.com/storage/tmpfs/
 
+gatsby-slide
 
 # Your work
 
-1. Build a docker image using your app
-2. Run docker container using `docker run -p [PORT]:[PORT]`
+## 1. Build a docker image and run
+
+1. Configure the Docker image
+
+Create a `Dockerfile` (without any extension) under the root of your project.
+
+Example:
+
+```
+FROM node:12
+
+WORKDIR /usr/src/app
+COPY package.json .
+RUN npm install
+COPY . .
+
+EXPOSE 3000
+CMD [ "npm", "start" ]
+
+```
+
+2. Build a docker image
+
+```
+docker build -t <your name>/<image name> .
+```
+
+3. Run docker container
+
+```
+docker run -p [PORT_1]:[PORT_2] <your name>/<image name>
+```
+
+Binding ports ([more info](https://runnable.com/docker/binding-docker-ports)):
+
+- `PORT_1` - an external port which will be listened by you host
+- `PORT_2` - en internal port inside the container
+
+4. Test your running app on `http://localhost:<PORT_1>`
+
+gatsby-slide
+
+
+# Your work
+
+## 2. Use docker volumes
+
+1. Run your docker container with the option `-v`
+
+```
+docker run -p [PORT_1]:[PORT_2] -v <path_to_dir_on_your_host>:<path_to_dir_inside_container> <your name>/<image name>
+```
+
+Binding volumes ([more info](https://docs.docker.com/storage/bind-mounts/)):
+
+- `path_to_dir_on_your_host` - where you want to allocate your file storage
+- `path_to_dir_inside_container` - where is located your storage inside the container
+
+2. Test your running app on `http://localhost:<PORT_1>`
+
+3. Create users and check your storage directory `path_to_dir_on_your_host`
+
+4. Run one more container with different `PORT_1` and the same `path_to_dir_on_your_host`, then test how the both containers are shearing one volume.
