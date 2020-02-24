@@ -5,6 +5,8 @@ Materials for the DevOps course at the ECE.
 Modules:
 - Introduction to DevOps
 - Git & SCM
+- CI/CD
+- Docket containers
 - ...
 
 ## Usage
@@ -20,6 +22,11 @@ npm run serve
 ```
 
 Then open in browser `http://localhost:9000` (could be another port number).
+
+## Content
+
+- "decks" - slide's content
+- "assets" - materials and code examples
 
 ### Requirements
 

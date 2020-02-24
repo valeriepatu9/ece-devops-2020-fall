@@ -1,5 +1,5 @@
 ---
-title: Docker containers
+title: Docker Part 1: Containers
 ---
 
 # DevOps course overview
