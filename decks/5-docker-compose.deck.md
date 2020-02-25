@@ -1,5 +1,5 @@
 ---
-title: Docker Part 2: Docker Compose
+title: "Docker Part 2: Docker Compose"
 ---
 
 # DevOps course overview
