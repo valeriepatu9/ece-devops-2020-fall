@@ -7,13 +7,13 @@ services:
     command:
     - --loglevel warning
     volumes:
-    - redis-data:/var/lib/redis:Z
+    - ./volume/redis:/var/lib/redis:Z
 
   postgresql:
     restart: always
     image: sameersbn/postgresql:10-2
     volumes:
-    - postgresql-data:/var/lib/postgresql:Z
+    - ./volume/postgresql:/var/lib/postgresql:Z
     environment:
     - DB_USER=gitlab
     - DB_PASS=IJ64LkKmN7OD0Gc19r9B
@@ -31,7 +31,7 @@ services:
     - "10080:80"
     - "10022:22"
     volumes:
-    - gitlab-data:/home/git/data:Z
+    - ./volume/gitlab:/home/git/data:Z
     environment:
     - DEBUG=false
     - RACK_ATTACK_WHITELIST=176.162.26.137
@@ -153,10 +153,6 @@ services:
     - OAUTH_AZURE_API_KEY=
     - OAUTH_AZURE_API_SECRET=
     - OAUTH_AZURE_TENANT_ID=
-volumes:
-  redis-data:
-  postgresql-data:
-  gitlab-data:
 networks:
   default:
     external:
