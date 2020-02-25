@@ -77,10 +77,24 @@ networks:
       name: private
 ```
 
+**For Linux or Mac:**
+
 ```
 sudo bash -c "echo '127.0.0.1    ece' >> /etc/hosts"
 sudo bash -c "echo '127.0.0.1    www.ece' >> /etc/hosts"
 sudo bash -c "echo '127.0.0.1    gitlab.ece' >> /etc/hosts"
+```
+
+**For Windows:**
+
+1. Open the file `c:\\Windows\System32\drivers\etc\hosts` in any editor as administrator.
+
+2. Append the strings:
+
+```
+127.0.0.1    ece
+127.0.0.1    www.ece
+127.0.0.1    gitlab.ece
 ```
 
 Make sure none listen on port 80.
