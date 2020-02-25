@@ -6,7 +6,7 @@ upstream www_pool {
 	server website_web_1.private:80;
 }
 server {
-	server_name www.dsti dsti;
+	server_name www.ece ece;
 	listen 80;
 	access_log /var/log/nginx/www_access.log;
 	error_log /var/log/nginx/www_error.log;

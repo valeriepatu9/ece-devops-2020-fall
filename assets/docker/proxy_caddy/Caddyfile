@@ -7,7 +7,7 @@ www.ece:80 {
 
 ece:80 {
   tls off
-  redir https://www.dsti{uri}
+  redir https://www.ece{uri}
 }
 
 gitlab.ece:80 {
