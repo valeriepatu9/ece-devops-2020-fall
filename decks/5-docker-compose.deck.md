@@ -138,3 +138,20 @@ And check the connections:
 curl http://www.ece
 curl http://gitlab.ece -L
 ```
+
+# Your work
+
+## 5. Create the `docker-compose.yml` file for your project "userapi"
+
+Inspiration - https://docs.docker.com/compose/
+
+1. Use ports
+2. Use volumes
+3. Use the same custom network `private`
+4. Define a local domain name (configure your `hosts` file), for example `userapi.ece`
+
+Test all your micro services:
+
+- GitLab - http://gitlab.ece
+- Static website - http://www.ece
+- Your app - http://userapi.ece
