@@ -22,12 +22,6 @@ The easiest way to get started with services, such as having a database (MongoDB
 
 Overview - https://docs.docker.com/compose/
 
-## Example
-
-```
-cd assets/docker/gitlab
-docker-compose up
-```
 gatsby-slide
 
 # Introduction to Network
@@ -36,7 +30,11 @@ Overview - https://docs.docker.com/network/
 
 Serve our website and gitlab behind a reverse proxy.
 
-## Start the private servers
+gatsby-slide
+
+# Your work
+
+## 1. Start the private servers
 
 Start the website and GitLab containers
 
@@ -59,7 +57,9 @@ curl http://localhost:10080/
 
 gatsby-slide
 
-## Get the environment ready
+# Your work
+
+## 2. Get the environment ready
 
 Create an internal network shared between all containers:
 
@@ -87,7 +87,9 @@ Make sure none listen on port 80.
 
 gatsby-slide
 
-## Use caddy
+# Your work
+
+## 3. Use Caddy
 
 Start the proxy:
 
@@ -105,7 +107,9 @@ curl http://gitlab.ece -L
 
 gatsby-slide
 
-## Use nginx
+# Your work
+
+## 4. Use Nginx
 
 Start the proxy:
 
@@ -120,8 +124,3 @@ And check the connections:
 curl http://www.ece
 curl http://gitlab.ece -L
 ```
-gatsby-slide
-
-# Your work
-
-- ...
