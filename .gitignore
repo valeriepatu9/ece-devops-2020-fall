@@ -1,8 +1,9 @@
 .cache
 node_modules
-public
+!./assets/docker/website/public
 .*
 !.gitignore
 package-lock.json
 HINTS.md
 yarn.lock
+public

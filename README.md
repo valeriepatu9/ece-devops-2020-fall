@@ -35,5 +35,5 @@ This project requires [Node.js](https://nodejs.org/en/).
 ## Author
 
 Sergei Kudinov   
-sergei@adaltas   
+sergei@adaltas.com   
 Developer and Data Engineer at [Adaltas](https://www.adaltas.com/)

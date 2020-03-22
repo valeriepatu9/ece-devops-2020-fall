@@ -139,6 +139,8 @@ curl http://www.ece
 curl http://gitlab.ece -L
 ```
 
+gatsby-slide
+
 # Your work
 
 ## 5. Create the `docker-compose.yml` file for your project "userapi"
