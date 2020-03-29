@@ -7,12 +7,18 @@ Modules:
 - Git & SCM
 - CI/CD
 - Docket containers
+- Docker Compose
+- Kubernetes
 - ...
 
 ## Usage
 
-This materials project uses [Gatsby.js](https://www.gatsbyjs.org/) framework.
-To build and run on your local do this:
+Slides content can be easily read right on GitHub in the [decks](decks) folder.
+You can also build slides and read them in a browser.
+
+## Build slides
+
+This project uses [Gatsby.js](https://www.gatsbyjs.org/) framework and requires [Node.js](https://nodejs.org/en/) installed. To build and run slides on your local run:
 
 ```
 git clone https://github.com/adaltas/ece-devops-course.git
@@ -21,16 +27,16 @@ npm install
 npm run serve
 ```
 
-Then open in browser `http://localhost:9000` (could be another port number).
+Then open in a browser `http://localhost:9000` (could be another port number).
 
 ## Content
 
-- "decks" - slide's content
-- "assets" - materials and code examples
+- [decks](decks) - slide's content
+- [assets](assets) - materials and code examples
 
-### Requirements
+## Project
 
-This project requires [Node.js](https://nodejs.org/en/).
+The description of the course project is here - [PROJECT.md](PROJECT.md)
 
 ## Author
 
