@@ -10,15 +10,29 @@
 
 4. Make docker orchestration using Docker Compose
 
-5. ...
+5. Make docker orchestration using Kubernetes
 
-## How you can get bonuses?
+6. ...
 
-Every initiative will be counted, there are what you can do in additional to get a better grade:
+## How can you get bonuses?
 
-- Use different tools and platforms instead of what passed in the classes
+There are what you can do in additional to get a better grade:
+
+- Every initiative will be counted, just describe what you did in additional in the README!
+- Use different tools and platforms instead of what is passed in the classes
 - Use different language (Java, Ruby, Python etc.) for developing an app or bring the Node.js app with an additional functionalities:   
-  - cover with more tests
+  - cover with more unit/functional/integration tests
   - connect to any data base like: MongoDB, LevelDB, PostgreSQL etc.
+- ...
 
-To be continued ...
+## How to send a project for evaluation?
+
+1. Send an email to [sergei@adaltas.com](mailto:sergei@adaltas.com)
+
+  - **Subject format:** "ECE - DevOps project - <Group name> - <LASTNAME Firstname>"
+  - **In the email body:**
+    - a link to repository on GitHub or GitLab
+    - describe what tools you used and attache all the necessary links (on Heroku, Travis CI, Docker Hub ...). This information should also be present in your README.md file.
+    - list of contributors
+
+2. **Attention!** Make sure your repository is **PRIVATE** and you sent an invitation for the GitHub account - https://github.com/sergkudinov
