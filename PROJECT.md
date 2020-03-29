@@ -29,10 +29,10 @@ There are what you can do in additional to get a better grade:
 
 1. Send an email to [sergei@adaltas.com](mailto:sergei@adaltas.com)
 
-  - **Subject format:** "ECE - DevOps project - <Group name> - <LASTNAME Firstname>"
+  - **Subject format:** "ECE - DevOps project - \<Group name\> - \<LASTNAME Firstname\>"
   - **In the email body:**
     - a link to repository on GitHub or GitLab
     - describe what tools you used and attache all the necessary links (on Heroku, Travis CI, Docker Hub ...). This information should also be present in your README.md file.
     - list of contributors
 
-2. **Attention!** Make sure your repository is **PRIVATE** and you sent an invitation for the GitHub account - https://github.com/sergkudinov
+2. **Attention!** Make sure your repository is **PRIVATE** and **you sent an invitation** to the GitHub account - https://github.com/sergkudinov
