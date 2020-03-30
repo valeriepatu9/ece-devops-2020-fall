@@ -18,7 +18,7 @@
 
 There are what you can do in additional to get a better grade:
 
-- Every initiative will be counted, just describe what you did in additional in the README!
+- Every initiative will be counted, just describe what you did in your README!
 - Use different tools and platforms instead of what is passed in the classes
 - Use different language (Java, Ruby, Python etc.) for developing an app or bring the Node.js app with an additional functionalities:   
   - cover with more unit/functional/integration tests
