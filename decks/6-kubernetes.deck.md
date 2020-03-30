@@ -34,7 +34,7 @@ gatsby-slide
 
 ## Videos
 
-- [Kubernetes in 5 mins](https://www.youtube.com/watch?v=PH-2FfFD2PU)
+- [Kubernetes in 7 mins](https://www.youtube.com/watch?v=NChhdOZV4sY)
 - [(Advanced) Kubernetes Deconstructed: Understanding Kubernetes by Breaking It Down](https://www.youtube.com/watch?v=90kZRyPcRZw)
 
 ## Links
