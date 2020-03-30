@@ -1,5 +1,9 @@
 # DevOps project
 
+## Deadline
+
+A project or an exam?
+
 ## Instructions
 
 1. Create an app on Node.js (enrich the template which was provided in the class) or use another language (Java, Ruby, Python ...). Cover the app with unit tests (functional, integration, ...).
