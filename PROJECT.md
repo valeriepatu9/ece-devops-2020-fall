@@ -10,9 +10,17 @@
 
 4. Make docker orchestration using Docker Compose
 
+  - create a `docker-compose.yml` file with necessary configuration
+
 5. Make docker orchestration using Kubernetes
 
+  - install a Kubernetes cluster (using Minikube)
+  - create a Kubernetes Manifest yaml file that configures deployment, services, replicas etc.
+  - configure a persistent storage with Volumes
+
 6. ...
+
+7. Describe your project in the README.md
 
 ## How can you get bonuses?
 
