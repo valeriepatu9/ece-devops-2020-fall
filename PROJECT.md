@@ -6,7 +6,7 @@ At the end of the DevOps course the students will pass an exam **and** a project
 
   - **The exam** in the format QCM will take place online via Moodle according to the planning. It will include from 20 to 30 questions (for 1 min. 30 sec. each), which were studied throughout all the modules.
 
-  - **The project** has to be sent for evaluation **no later than 27th April**. Work on a project can be carried out by 1 student or a team of 2 or a maximum of 3 students.
+  - **The project** has to be sent for evaluation **no later than 27th April 2020**. Work on a project can be carried out by 1 student or a team of 2 or a maximum of 3 students.
 
 ## How to send a project for evaluation?
 
