@@ -1,17 +1,18 @@
 ---
-title: "Docker Part 1: Containers"
+title: Containers - Docker
 ---
 
 # DevOps course overview
 
-- DevOps culture
-- Source Control Management (SCM) - Git
-- Continuous Testing
-- Continuous Integration & Continuous Delivery (CI/CD) - Travis CI
-- **Containers - Docker**
-- Containers orchestration - Kubernetes
-- Infrastructure as code (IaC) - Ansible
-- Cloud native architecture
+1. Introduction to DevOps
+2. Source Control Management (SCM) - Git
+3. Continuous Testing, Continuous Integration & Continuous Delivery (CI/CD) - Travis CI
+4. **Containers - Docker**
+5. Containers orchestration - Docker Compose
+6. Containers orchestration - Kubernetes
+7. Microservices & Service mesh - Istio
+8. Infrastructure as code (IaC) - Ansible
+9. Cloud native architecture
 
 gatsby-slide
 

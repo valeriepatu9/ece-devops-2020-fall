@@ -1,17 +1,18 @@
 ---
-title: Kubernetes
+title: Containers orchestration - Kubernetes
 ---
 
 # DevOps course overview
 
-- DevOps culture
-- Source Control Management (SCM) - Git
-- Continuous Testing
-- Continuous Integration & Continuous Delivery (CI/CD) - Travis CI
-- Containers - Docker
-- **Containers orchestration - Kubernetes**
-- Infrastructure as code (IaC) - Ansible
-- Cloud native architecture
+1. Introduction to DevOps
+2. Source Control Management (SCM) - Git
+3. Continuous Testing, Continuous Integration & Continuous Delivery (CI/CD) - Travis CI
+4. Containers - Docker
+5. Containers orchestration - Docker Compose
+6. **Containers orchestration - Kubernetes**
+7. Microservices & Service mesh - Istio
+8. Infrastructure as code (IaC) - Ansible
+9. Cloud native architecture
 
 gatsby-slide
 
@@ -34,6 +35,7 @@ gatsby-slide
 
 ## Videos
 
+- [Kubernetes Explained](https://www.youtube.com/watch?v=aSrqRSk43lY)
 - [Kubernetes in 7 mins](https://www.youtube.com/watch?v=NChhdOZV4sY)
 - [(Advanced) Kubernetes Deconstructed: Understanding Kubernetes by Breaking It Down](https://www.youtube.com/watch?v=90kZRyPcRZw)
 
