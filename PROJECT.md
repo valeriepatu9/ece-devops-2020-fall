@@ -24,7 +24,7 @@ At the end of the DevOps course the students will pass an exam **and** a project
 
 The project is based on all the class works and students are allowed to use all of them them.   
 
-0. **Describe your project in the `README.md` file:**
+### 0. Describe your project in the `README.md` file
 
   - List of all the work performed (briefly, describing features and bonus tasks)
   - Installing / running / using / testing / deployment instructions (everyone is needed)
@@ -32,35 +32,35 @@ The project is based on all the class works and students are allowed to use all 
   - List of collaborators
   - Other additional info you want to include
 
-1. Create an application:
+### 1. Create an application:
 
   - Enrich the draft application (at least finish all the TODO comments) on Node.js developed during the classes or create your own project using different language on your choice (like Java, Ruby, Python ...)
   - Cover the app with unit tests (functional, integration, ...).
 
-2. Apply CI/CD pipeline using Travis CI and Heroku (or other tools like GitLab)
+### 2. Apply CI/CD pipeline using Travis CI and Heroku (or other tools like GitLab)
 
-3. Build docker image out of your application:
+### 3. Build docker image out of your application:
 
   - create a `Dockerfile`
   - push the image to Docker Hub
 
-4. Make docker orchestration using Docker Compose:
+### 4. Make docker orchestration using Docker Compose:
 
   - create a `docker-compose.yml` file with necessary configuration
 
-5. Make docker orchestration using Kubernetes
+### 5. Make docker orchestration using Kubernetes
 
   - install a Kubernetes cluster (using Minikube)
   - create a Kubernetes Manifest yaml file that configures deployment, services, replicas etc.
   - configure a persistent storage with Volumes
 
-6. Make a service mesh using Istio
+### 6. Make a service mesh using Istio
 
   - Deploy your application
   - Route requests between 2 versions
   - Traffic shifting 2 versions
 
-7. ... // TODO: add additional instructions ( IaC)
+### 7. ... // TODO: add additional instructions ( IaC)
 
 
 ## How can you get bonuses?
