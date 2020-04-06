@@ -78,17 +78,17 @@ gatsby-slide
 
 # Your work
 
-You will start a single node Kubernetes cluster using Minikube and deploy  containerized applications on top of it.
+You will start a single node Kubernetes cluster using Minikube and deploy containerized applications on top of it.
 
 ## Objectives
 
-**Part 1:**
+**Part 1 (classwork):**
 
 1. Installation
 2. Quick start
 3. Explore the local Kubernetes cluster
 
-**Part 2:**
+**Part 2 (homework, included to the project):**
 
 4. Create an image of your app on Docker Hub
 5. Deploy an app using `kubectl`
