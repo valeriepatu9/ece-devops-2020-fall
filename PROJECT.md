@@ -54,7 +54,13 @@ The project is based on all the class works and students are allowed to use all 
   - create a Kubernetes Manifest yaml file that configures deployment, services, replicas etc.
   - configure a persistent storage with Volumes
 
-6. ... // TODO: add additional instructions (about Service mesh and IaC)
+6. Make a service mesh using Istio
+
+  - Deploy your application
+  - Route requests between 2 versions
+  - Traffic shifting 2 versions
+
+7. ... // TODO: add additional instructions ( IaC)
 
 
 ## How can you get bonuses?
