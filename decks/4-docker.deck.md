@@ -20,43 +20,58 @@ gatsby-slide
 
 Container - is a running process, with some added encapsulation features.
 
-About - https://docs.docker.com/engine/
-Overview - https://docs.docker.com/engine/docker-overview/
+## Provides
 
-## For
+  - developing lots of small changes
+  - shipping easily
+  - running everywhere
 
-- developing lots of small changes
-- shipping easily
-- running everywhere
+## Videos
+
+  - [Introduction To Docker and Docker Containers](https://www.youtube.com/watch?v=JSLpG_spOBM) (8 min)
+  - [Docker Client, Images and Containers](https://www.youtube.com/watch?v=CcxbHkqzJuI) (14 min)
+  - [Docker : l'essentiel en 7 minutes](https://www.youtube.com/watch?v=caXHwYC3tq8&t=1s) (7 min)
+
+## Links
+
+  - [About](https://docs.docker.com/engine/)
+  - [Overview](https://docs.docker.com/engine/docker-overview/)
+  - [Get started](https://docs.docker.com/get-started/)
 
 gatsby-slide
 
 # Docker Architecture
 
+[Image - Docker objects and Docker engine](https://docs.docker.com/engine/images/engine-components-flow.png)
+
 ## Docker Engine
 
-- server (daemon process)
+- Server (daemon process)
 - REST API
-- client (CLI)
+- Client (CLI)
 
 ## Docker objects
 
-- images
-- containers
-- networks
-- volumes
-- (some more)
+- Images
+- Containers
+- Networks
+- Volumes
+- ... some more objects
+
+They all are available to be observed and controlled using the command `docker <object-name>`.
 
 ## Architecture
+
+[Image - Docker architecture](https://docs.docker.com/engine/images/architecture.svg)
+
 - client (CLI via REST API)
 - server (Docker host) - deamon, containers, images, volumes
 - registry - Docker Hub
 
-Containers vs VMs - https://docs.docker.com/get-started/
-
 gatsby-slide
 
-# Scenario
+# Development Scenario
+
 1. Developers write code and share their work using Docker containers
 2. Developers use Docker to push their applications into a **test environment** and execute automated and manual tests
 3. Developers find bugs, they fix them in the **development environment** and redeploy to the **test environment**
@@ -82,9 +97,11 @@ Example: `docker run -i -t ubuntu /bin/bash`
 
 gatsby-slide
 
-# `Dockerfile`: containerizing an application
+# Building Docker images
 
-Python:
+`Dockerfile` - configuration file for building images.
+
+**Python:**
 ```
 FROM ubuntu:15.04
 COPY . /app
@@ -92,7 +109,7 @@ RUN make /app
 CMD python /app/app.py
 ```
 
-Node.js:
+**Node.js:**
 ```
 FROM node:12
 WORKDIR /usr/src/app
@@ -102,9 +119,7 @@ COPY . .
 CMD [ "npm", "start" ]
 ```
 
-Layers, images, containers, storage drivers - https://docs.docker.com/v17.09/engine/userguide/storagedriver/imagesandcontainers/
-
-.dockerignore file - https://docs.docker.com/engine/reference/builder/#dockerignore-file
+To exclude some files from the docker we use [`.dockerignore` file](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
 
 gatsby-slide
 
@@ -112,18 +127,19 @@ gatsby-slide
 
 Overview - https://docs.docker.com/storage/
 
-Types:
-- volume - https://docs.docker.com/storage/volumes/
-- bind mount - https://docs.docker.com/storage/bind-mounts/
-- tmpfs mount - https://docs.docker.com/storage/tmpfs/
+Storage types:
+
+  - volume - https://docs.docker.com/storage/volumes/
+  - bind mount - https://docs.docker.com/storage/bind-mounts/
+  - tmpfs mount - https://docs.docker.com/storage/tmpfs/
 
 gatsby-slide
 
-# Your work
+# Your work (included to project)
 
-## 1. Build a docker image and run
+## 1. Build a docker image and run a container
 
-1. Configure the Docker image
+**1. Configure the Docker image**
 
 Create a `Dockerfile` (without any extension) under the root of your project.
 
@@ -139,19 +155,18 @@ COPY . .
 
 EXPOSE 3000
 CMD [ "npm", "start" ]
-
 ```
 
-2. Build a docker image
+**2. Build a docker image (don't forget a dot at the end of the command)**
 
 ```
-docker build -t <your name>/<image name> .
+docker build -t <docker-account-name>/<custom-image-name> .
 ```
 
-3. Run docker container
+**3. Run docker container**
 
 ```
-docker run -p [PORT_1]:[PORT_2] <your name>/<image name>
+docker run -p <PORT_1>:<PORT_2> <docker-account-name>/<custom-image-name>
 ```
 
 Binding ports ([more info](https://runnable.com/docker/binding-docker-ports)):
@@ -159,12 +174,12 @@ Binding ports ([more info](https://runnable.com/docker/binding-docker-ports)):
 - `PORT_1` - an external port which will be listened by you host
 - `PORT_2` - en internal port inside the container
 
-4. Test your running app on `http://localhost:<PORT_1>`
+**4. Test your running app on `http://localhost:<PORT_1>`**
 
 gatsby-slide
 
 
-# Your work
+# Your work (included to project)
 
 ## 2. Use docker volumes
 
