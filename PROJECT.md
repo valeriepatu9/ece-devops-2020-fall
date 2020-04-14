@@ -26,44 +26,51 @@ The project is based on all the class works and students are allowed to use all 
 
 ### 0. Describe your project in the `README.md` file
 
-  - List of all the work performed (briefly, describing features and bonus tasks)
-  - Installing / running / using / testing / deployment instructions (everyone is needed)
-  - All the necessary links with the tools integrated (Travis CI, Heroku, Docker Hub ... )
-  - List of collaborators
-  - Other additional info you want to include
+  1. List of all the work performed (briefly, describing features and bonus tasks)
+  2. Installing / running / using / testing / deployment instructions (everyone is needed)
+  3. All the necessary links with the tools integrated (Travis CI, Heroku, Docker Hub ... )
+  4. List of collaborators
+  5. Other additional info you want to include
 
-### 1. Create an application:
+### 1. Create an application
 
-  - Enrich the draft application (at least finish all the TODO comments) on Node.js developed during the classes or create your own project using different language on your choice (like Java, Ruby, Python ...)
-  - Cover the app with unit tests (functional, integration, ...).
+  1. Enrich the draft application (at least finish all the TODO comments) on Node.js developed during the classes or create your own project using different language on your choice (like Java, Ruby, Python ...)
+  2. Cover the app with unit tests (functional, integration, ...).
 
-### 2. Apply CI/CD pipeline using Travis CI and Heroku (or other tools like GitLab)
+### 2. Apply CI/CD pipeline (using Travis CI and Heroku or other tools like GitLab)
 
-### 3. Build docker image out of your application:
+  1. Configure CI with Travis CI
+  2. Configure CD with Heroku
 
-  - create a `Dockerfile`
-  - push the image to Docker Hub
+### 3. Build docker image out of your application
 
-### 4. Make docker orchestration using Docker Compose:
+  1. Create a `Dockerfile`
+  2. Push an image to your Docker Hub account
 
-  - create a `docker-compose.yml` file with necessary configuration
+### 4. Make docker orchestration using Docker Compose
+
+  1. Create a `docker-compose.yml` file with necessary configuration
 
 ### 5. Make docker orchestration using Kubernetes
 
-  - install a Kubernetes cluster (using Minikube)
-  - create a Kubernetes Manifest yaml file that configures deployment, services, replicas etc.
-  - configure a persistent storage with Volumes
+  1. Install a Kubernetes cluster (using Minikube)
+  2. Create a Kubernetes Manifest yaml file that configures deployment, services, replicas etc.
+  3. Configure a persistent storage with Volumes in a Manifest yaml file
 
 ### 6. Make a service mesh using Istio
 
-  - Deploy your application
-  - Route requests between 2 versions
-  - Traffic shifting 2 versions
+  1. Deploy your application using Istio
+  2. Route requests between 2 different versions of your app
+  3. Make traffic shifting between 2 different versions of your app
 
-### 7. ... // TODO: add additional instructions ( IaC)
+### 7. Configure infrastructure as code using Ansible
 
+  1. Prepare a virtual environment and install Ansible on it
+  2. Install Docker Engine on VM using Ansible
+  3. Run a docker container on VM mounting Volumes
+  4. Run docker containers using [docker_compose](https://docs.ansible.com/ansible/latest/modules/docker_compose_module.html) module
 
-## How can you get bonuses?
+## How can you get some bonuses?
 
 There is what you can do in additional to get a better grade:
 
@@ -72,7 +79,7 @@ There is what you can do in additional to get a better grade:
   - Use different language (Java, Ruby, Python etc.) for developing an app or bring the Node.js app with an additional functionalities:   
     - cover with more unit/functional/integration tests
     - connect to any data base like: MongoDB, LevelDB, PostgreSQL etc.
-  - ...
+  - Etc.
 
 ## Evaluation
 
