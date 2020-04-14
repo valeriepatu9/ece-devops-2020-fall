@@ -16,8 +16,6 @@ title: Microservices & Service mesh - Istio
 
 gatsby-slide
 
-# Introduction
-
 # Microservices architecture
 
 **Microservices (microservice architecture)** - a style that structures an application as a collection of services that are:
