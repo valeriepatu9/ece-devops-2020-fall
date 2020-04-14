@@ -35,6 +35,18 @@ gatsby-slide
 
 # Your work
 
+## Objectives
+
+1. Start the private servers
+2. Get the environment ready
+3. Use Caddy proxy
+4. Use Nginx proxy
+5. Create the `docker-compose.yml` file for your project "userapi"
+
+gatsby-slide
+
+# Your work
+
 ## 1. Start the private servers
 
 Start the website and GitLab containers
@@ -104,7 +116,7 @@ gatsby-slide
 
 # Your work
 
-## 3. Use Caddy
+## 3. Use Caddy proxy
 
 Start the proxy:
 
@@ -124,7 +136,7 @@ gatsby-slide
 
 # Your work
 
-## 4. Use Nginx
+## 4. Use Nginx proxy
 
 Start the proxy:
 
@@ -144,7 +156,7 @@ gatsby-slide
 
 # Your work
 
-## 5. Create the `docker-compose.yml` file for your project "userapi"
+## 5. Create the `docker-compose.yml` file for your "ece-userapi" project
 
 Inspiration - https://docs.docker.com/compose/
 

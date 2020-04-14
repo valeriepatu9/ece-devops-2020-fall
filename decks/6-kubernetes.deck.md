@@ -16,9 +16,31 @@ title: Containers orchestration - Kubernetes
 
 gatsby-slide
 
+# What is Container Orchestration?
+
+**Container orchestration** automates the deployment, management, scaling, and networking of containers.
+
+## It used for:
+
+- Provisioning and deployment
+- Configuration and scheduling
+- Resource allocation
+- Container availability
+- Scaling or removing containers based on balancing workloads across your infrastructure
+- Load balancing and traffic routing
+- Monitoring container health
+- Configuring applications based on the container in which they will run
+- Keeping interactions between containers secure
+
+## Videos:
+
+- [Container Orchestration Explained](https://www.youtube.com/watch?v=kBF6Bvth0zw)
+
+gatsby-slide
+
 # Introduction to Kubernetes
 
-**Kubernetes is** a production-grade, open-source platform that orchestrates the placement (scheduling) and execution of application containers within and across computer clusters.
+**Kubernetes is** an open source container orchestration tool.
 
 **Functions:**
 
@@ -28,6 +50,11 @@ gatsby-slide
 **Advantages:**
 
 - **is more efficient than past deployment models**, where applications were installed directly onto specific machines as packages deeply integrated into the host.
+
+**Alternatives:**
+
+- Docker Swarm
+- Apache Mesos
 
 gatsby-slide
 
@@ -105,7 +132,7 @@ gatsby-slide
 [Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/), this includes 3 steps:
 
   - [install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
-  - [isntall a Hypervisor](https://kubernetes.io/docs/tasks/tools/install-minikube/#install-a-hypervisor)
+  - [install a Hypervisor](https://kubernetes.io/docs/tasks/tools/install-minikube/#install-a-hypervisor)
   - [install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/#install-minikube-using-chocolatey)
 
 gatsby-slide
