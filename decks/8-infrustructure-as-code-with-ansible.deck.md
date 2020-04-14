@@ -145,7 +145,7 @@ Take a look at the [playbooks/docker/install/tasks/main.yml](../assets/lab-8-ans
 1. Update the playbooks on the VM using `vagrant upload`:
 
 ```
-vagrant upload playbooks /vagrant/playbooks gitlab_server
+vagrant upload playbooks /vagrant/playbooks docker_server
 ```
 
 2. Rerun provisioning with the command:
