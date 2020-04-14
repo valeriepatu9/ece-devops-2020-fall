@@ -30,6 +30,7 @@ Ansible is a radically simple **IT automation engine** that automates:
 
 Watch in class:
 
+- [What is Infrastructure as Code?](https://www.youtube.com/watch?v=zWw2wuiKd5o)
 - [What is Ansible In Under 3 Minutes](https://www.youtube.com/watch?v=tWR1KXgEYxE) (3 min)
 - [001 Introduction to Ansible](https://www.youtube.com/watch?v=GMzXAbT_wlk&list=PL4CwCXuy76Fe4Lll2ksYXGtupJNxpiBVV) (3 min)
 - [002 Installing Ansible](https://www.youtube.com/watch?v=4xThcqDfbSA&list=PL4CwCXuy76Fe4Lll2ksYXGtupJNxpiBVV&index=2) (9 min)
