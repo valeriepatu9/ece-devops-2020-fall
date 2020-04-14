@@ -6,7 +6,7 @@ title: Containers orchestration - Docker Compose
 
 1. Introduction to DevOps
 2. Source Control Management (SCM) - Git
-3. Continuous Testing, Continuous Integration & Continuous Delivery (CI/CD) - Travis CI
+3. Continuous Testing, Continuous Integration & Continuous Delivery (CI/CD) - Travis CI and Heroku
 4. Containers - Docker
 5. **Containers orchestration - Docker Compose**
 6. Containers orchestration - Kubernetes
@@ -52,9 +52,9 @@ gatsby-slide
 Start the website and GitLab containers
 
 ```
-cd assets/docker/gitlab
+cd assets/lab-5-docker-compose/gitlab
 docker-compose up
-cd assets/docker/website
+cd assets/lab-5-docker-compose/website
 docker-compose up
 ```
 
@@ -121,7 +121,7 @@ gatsby-slide
 Start the proxy:
 
 ```
-cd assets/docker/proxy_caddy
+cd assets/lab-5-docker-compose/proxy_caddy
 docker-compose up
 ```
 
@@ -141,7 +141,7 @@ gatsby-slide
 Start the proxy:
 
 ```
-cd assets/docker/proxy_nginx
+cd assets/lab-5-docker-compose/proxy_nginx
 docker-compose up
 ```
 
