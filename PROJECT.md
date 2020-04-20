@@ -4,9 +4,24 @@
 
 At the end of the DevOps course the students will pass an exam **and** a project:
 
-  - **The exam** in the format QCM will take place online via Moodle according to the planning. It will include from 20 to 30 questions (for 1 min. 30 sec. each), which were studied throughout all the modules.
+### The exam
 
-  - **The project** has to be sent for evaluation **no later than 27th April 2020**. Work on a project can be carried out by 1 student or a team of 2 or a maximum of 3 students.
+It will take place online via Moodle according to the planning.
+
+**Format:**
+
+- QCM (from 1 to 4 correct answers possible)
+- 30 questions for 1 min. 30 sec.
+
+It will contain 2 types of questions (15/15):
+
+1. Questions on knowledge of execution CLI commands. Really basic usage of the tools we used like docker and kubectl, if you worked on project and did the work in class, it won't be a problem.
+
+2. Questions for understanding DevOps general principles, understanding the basis architecture of the tools and their functionalities. For preparing, I would recommend you to reread all the slides with attached links to tutorials and docks, and rewatch short videos as well.
+
+### The project
+
+It has to be sent for evaluation **no later than 27th April 2020**. Work on a project can be carried out by 1 student or a team of 2 or a maximum of 3 students.
 
 ## How to send a project for evaluation?
 
