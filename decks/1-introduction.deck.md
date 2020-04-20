@@ -43,8 +43,7 @@ gatsby-slide
 - Quick iterative process
 - Tasks automation
 - Monitor everything, every step
-- Present in a lot of fields :
-- Sysadmin, Data Engeneering, Data Science
+- Present in a lot of fields: Sysadmin, Data Engeneering, Data Science
 - You can’t do DevOps alone
 
 gatsby-slide
@@ -66,6 +65,7 @@ gatsby-slide
 - [Image 2](https://www.markerbench.com/assets/512px-Devops-toolchain-87517177fde0796fcddf9f6ef08da03a43bb973206101589d4bf0bf7f61960ad.png)
 
 [DevOps with GitLab](https://about.gitlab.com/stages-devops-lifecycle/)
+
 gatsby-slide
 
 # Site Reliability Engineering (SRE) principles

@@ -32,12 +32,13 @@ gatsby-slide
 
 - Higher level function testing
 - Test outside dependencies
-- Example: Database connection, API
+- Example: get a specific value from a database, API
 
 ### Integration tests
 
 - Assemble project modules
-- Test how project modules react together
+- Test how microservices work together
+- Example: database connection
 
 ### End-To-End tests
 
