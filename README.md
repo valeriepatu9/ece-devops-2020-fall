@@ -3,13 +3,16 @@
 Materials for the DevOps course at the ECE.
 
 Modules:
-- Introduction to DevOps
-- Git & SCM
-- CI/CD
-- Docket containers
-- Docker Compose
-- Kubernetes
-- ...
+
+0. Prerequisites for the DevOps course
+1. Introduction to DevOps
+2. Source Control Management (SCM) - Git
+3. Continuous Testing, Continuous Integration & Continuous Delivery (CI/CD) - Travis CI and Heroku
+4. Containers - Docker
+5. Containers orchestration - Docker Compose
+6. Containers orchestration - Kubernetes
+7. Microservices & Service mesh - Istio
+8. Infrastructure as code (IaC) - Ansible
 
 ## Usage
 

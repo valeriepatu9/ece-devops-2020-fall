@@ -12,7 +12,6 @@ title: Containers orchestration - Kubernetes
 6. **Containers orchestration - Kubernetes**
 7. Microservices & Service mesh - Istio
 8. Infrastructure as code (IaC) - Ansible
-9. Cloud native architecture
 
 gatsby-slide
 
