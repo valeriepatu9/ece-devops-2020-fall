@@ -11,7 +11,8 @@ It will take place online via Moodle according to the planning.
 **Format:**
 
 - QCM (from 1 to 4 correct answers possible)
-- 30 questions for 1 min. 30 sec.
+- 30 questions
+- 45 min
 
 It will contain 2 types of questions (15/15):
 
