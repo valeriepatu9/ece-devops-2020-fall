@@ -99,4 +99,21 @@ There is what you can do in additional to get a better grade:
 
 ## Evaluation
 
-... // TODO: describe evaluation criteria
+Grade system:
+
+| Subject                                                         |   Code    | Max. grade|
+|:----------------------------------------------------------------|:---------:|:---------:|
+| Project description                                             |   D       |    +1     |
+| Example application, test coverage and  description             |   APP     |    +3     |
+| Continuous Integration and Continuous Delivery (and Deployment) |   CI/CD   |    +3     |
+| Containerisation with Docker and Docker Compose                 |   DC      |    +3     |
+| Container orchestration using Kubernetes                        |   KUB     |    +3     |
+| Service mesh using Istio                                        |   SM      |    +3     |
+| Infrastructure as code using Ansible                            |   IaC     |    +3     |
+| Bonus tasks (1 point each)                                      |   BNS     |    +1     |
+
+Taken into account:
+
+- richness of the commit history
+- accuracy and purity of the project (descriptions, source code, files)
+- activity in classes
