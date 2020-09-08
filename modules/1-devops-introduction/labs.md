@@ -39,6 +39,12 @@ cd ~/path/to/your-root-project-directory
 mkdir ece-devops
 ```
 
+And go to this directory:
+
+```bash
+cd ece-devops
+```
+
 3. Initialize a Git repository
 
 ```bash
@@ -49,7 +55,7 @@ git init
 
 `CHANGELOG.md` is a file that describes the evolution of the project. All notable changes will be documented in this file. 
 
-1. Create the `CHANGELOG.md` file with the starting content
+1. Create the `CHANGELOG.md` file inside the `ece-devops` directory with the starting content:
 
 ```md
 # Changelog
