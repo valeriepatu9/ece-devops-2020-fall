@@ -27,6 +27,8 @@ Introduction to DevOps
 
 1. Using CLI commands navigate in your terminal to the directory where you will store your project folder.
 
+[Read more about CLI bash commands](https://www.educative.io/blog/bash-shell-command-cheat-sheet)
+
 Example:
 
 ```bash 
