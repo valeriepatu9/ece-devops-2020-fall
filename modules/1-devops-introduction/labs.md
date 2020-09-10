@@ -1,33 +1,39 @@
 # Labs
 
-Introduction to DevOps
+The goal of this practical work is to learn the proper way of creating an IT project using **best practices**. This is important since the core of implementing DevOps to companies processes is writing a clean and high quality source code as well as its documenting.
+
+As an example programming language, we will use JavaScript with its server side runtime - [NodeJS](https://nodejs.org/en/), because it is one of the most popular languages for building different types of applications and it's very easy to get started with it. You are not obliged to use only NodeJS for these labs, you are allowed to repeat similar steps using any other programming language like Java, C++, Python or up to your choice, but realisation of these steps will be different for the specific runtime.
 
 ## Objectives
 
 1. Start a project
-2. Create a changelog file
-3. Initialize a NodeJS package
-4. Create a NodeJS script
-5. Create a web application using ExpressJS package
+2. Initialize a NodeJS package
+3. Create a NodeJS script
+4. Create a web application using ExpressJS package
+5. Create a `CHANGELOG.md` file
 6. Describe the project in a `README.md` file
+
+In result, you will achieve creation a documented project on NodeJS of a simple web server displaying a "Hello world!" message on a home page.
 
 ## Before starting
 
-1. Install an IDE or a text editor (ex: https://code.visualstudio.com/ or https://atom.io/)
-2. Install Git, use for the installation:
+1. Install an **IDE or a text editor**, for example, [Atom](https://atom.io/) or [VS Code](https://code.visualstudio.com/).
+2. Install **Git**, use for installation:
   - Windows: https://gitforwindows.org/
   - Linux: https://git-scm.com/download/linux
   - MacOS: https://git-scm.com/download/mac   
-  (Only for Windows users) Install Git Bash and use it as a command line terminal
-3. Install NodeJS: https://nodejs.org/
+3. Install **NodeJS**: https://nodejs.org/
+4. Open a command line interface:
+  - MacOS or Linux: use **Terminal**
+  - Windows: use **Git Bash** (should be installed when installing Git). **Note!** Don't use default *CMD.exe*, because it has different commands from a command line of the Linux OS, which is used in most IT environments.
 
 ## 1. Start a project
 
 **Note!** Don't put spaces (` `) ether in folder names ether in file names. Otherwise, you will have to use escaping characters when navigating to them. Use "kebab-case" naming convention by separating words with dashes (`-`).
 
-1. Using CLI commands navigate in your terminal to the directory where you will store your project folder.
+1. Using **CLI bash commands** in your terminal (Terminal or Git Bash) navigate to the directory where you will store your project folder.
 
-[Read more about CLI bash commands](https://www.educative.io/blog/bash-shell-command-cheat-sheet)
+[Learn basic CLI bash commands](https://www.educative.io/blog/bash-shell-command-cheat-sheet)
 
 Example:
 
@@ -35,60 +41,40 @@ Example:
 cd ~/path/to/your-root-project-directory
 ```
 
-2. Choose a name for your project and create a directory
+2. Choose a name for your project (for example, `ece-devops`) and create a directory:
 
 ```bash
 mkdir ece-devops
 ```
 
-And go to this directory:
+Then navigate to this directory:
 
 ```bash
 cd ece-devops
 ```
 
-3. Initialize a Git repository
+3. Initialize a [Git repository](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 
 ```bash
 git init
 ```
 
-## 2. Create a changelog file
-
-`CHANGELOG.md` is a file that describes the evolution of the project. All notable changes will be documented in this file. 
-
-1. Create the `CHANGELOG.md` file inside the `ece-devops` directory with the starting content:
-
-```md
-# Changelog
-
-## Unreleased
-
-### Added
-
-- Initialize a Git repository
-- Create the project folder
-```
-
-2. Constantly update this file when working on the project. 
-
-[Read more](https://keepachangelog.com/en/1.0.0/)
-
-## 3. Initialize a NodeJS package
+## 2. Initialize a NodeJS package
 
 1. Initialize a NodeJS package running this command:
 
 ```bash
 npm init -y
 ```
+This will create an initial `package.json` file with the package (NodeJS project) description. Later, you can manually modify the content respecting the [JSON format](https://en.wikipedia.org/wiki/JSON). For example, these values:
+  - `author`
+  - `description`
 
-This will create an initial `package.json` file with the package description. 
+[Read more about NodeJS packages and modules](https://docs.npmjs.com/about-packages-and-modules)
 
-2. Modify content in the `package.json` file respecting the JSON format:
-  - change `author` name
-  - change `description` of the package
+[Read more about `package.json` file](https://nodejs.org/en/knowledge/getting-started/npm/what-is-the-file-package-json/)
 
-3. Run the NPM script:
+2. Run the NPM script:
 
 ```bash
 npm run test
@@ -98,16 +84,30 @@ npm test
 
 It will run the bash script `echo \"Error: no test specified\" && exit 1` defined in the `package.json` file, what outputs the string `Error: no test specified` to stdout.
 
-## 4. Create a NodeJS script
+## 3. Create a NodeJS script 
 
-1. Create a file `index.js` with the following content:
+Now, we start using a text editor or IDE (Atom, VS Code, WebStorm or up to your choice). 
+
+1. Open a project folder in your editor.
+
+You also can use bash commands for opening it. Being under the root of the project directory, run one of the command:
+
+```bash
+# For Atom
+atom .
+
+# For VS Code
+code .
+```
+
+2. Create a file `index.js` with the following content:
 
 ```js
 str = "Hello NodeJS!"
 console.log(str)
 ```
 
-2. Run the NodeJS script in the terminal:
+3. Run the NodeJS script in the terminal:
 
 ```bash
 node index.js
@@ -115,7 +115,7 @@ node index.js
 
 It will print the message `Hello NodeJS!`.
 
-3. Define this command as a NPM script. Modify in the `package.json` file like this:
+4. Define this command as a NPM script. Modify in the `package.json` file like this:
 
 ```json
 ...
@@ -126,7 +126,7 @@ It will print the message `Hello NodeJS!`.
 ...
 ```
 
-4. Run the NPM scrip with the command:
+5. Run the NPM scrip with the command:
 
 ```bash
 npm run start
@@ -136,7 +136,7 @@ npm start
 
 It will do the same like in the step 2.
 
-## 5. Create a web application using ExpressJS package
+## 4. Create a web application using ExpressJS package
 
 1. Install the [ExpressJS](https://www.npmjs.com/package/express) package:
 
@@ -145,6 +145,18 @@ npm install express
 ```
 
 It will install the package files and its dependencies sourced on GitHub to you project directory inside `node_modules` folder.
+
+Also, this command will add a dependency to you `package.json` like:
+
+```json
+...
+"dependencies": {
+    "express": "^4.17.1"
+  }
+...  
+``` 
+
+It is a NodeJS (actually NPM) "feature" to let developers install all the necessary packages for the current project using just one single command, instead of installing each package repeating such a command like `npm install PACKAGE_NAME`. You can experiment it by removing the entire `node_modules` folder and running the `npm install` command.
 
 2. Modify the `index.js` file with the following content:
 
@@ -155,7 +167,7 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello world!')
 })
 
 module.exports = app.listen(port, (err) => {
@@ -164,13 +176,39 @@ module.exports = app.listen(port, (err) => {
 })
 ```
 
-3. Run the NPM `start` script.
+3. Run the NPM `start` script like in the previous step.
+
+## 5. Create a `CHANGELOG.md` file
+
+`CHANGELOG.md` is a file that describes the evolution of the project. All notable changes will be documented in this file. 
+
+[Read more about CHANGELOG](https://keepachangelog.com/en/1.0.0/)
+
+1. Create the `CHANGELOG.md` file under the root of your project with a content like:
+
+```md
+# Changelog
+
+## Unreleased
+
+### Added
+
+- Create a HTTP web server using Express
+- Initialize a project
+```
+
+Since now, when working on the project you will be constantly update it. 
 
 ## 6. Describe the project in a `README.md` file
 
-Create a `README.md` file and describe the project with a minimal information such as:
-  - Short description
-  - List of Functionalities 
-  - Installation instructions
-  - Usage instructions
-  - Author information
+You may take an inspiration what to write in a `README.md` file from any [Adaltas projects on GitHub](https://github.com/adaltas/), where the best practices for writing such a file are followed.
+
+Also you can refer to [this documentation](https://www.makeareadme.com/) to learn more.
+
+1. Create a `README.md` file and describe the project with an information such as:
+  
+- Short description
+- List of functionalities
+- Installation instructions
+- Usage instructions
+- Author information

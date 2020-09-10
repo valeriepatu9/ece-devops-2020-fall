@@ -2,8 +2,8 @@
 
 ## DevOps
 
-- Is a culture of human communication, technical processes, and tools
-- It is breaking barriers between the Developers and Operations
+- **DevOps** is a culture of human communication, technical processes, and tools
+- **DevOps** is breaking barriers between Developers and Operations by automating the processes, in order that they can build, test, and release software faster and more reliably.
 
 ## Why DevOps?
 
@@ -133,4 +133,4 @@ Examples:
 `PATCH` - version when you make backwards compatible bug fixes.
 `LABEL` - for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
 
-[Read more](https://semver.org/)
+[Read more about SemVer](https://semver.org/)
