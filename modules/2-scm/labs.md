@@ -121,8 +121,9 @@ You can find a detailed list of the different GIT CLI commands:
 
 ## Bonus tasks
 
-1. Add multiple remotes ([reference here](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes))
+1. Add multiple remotes (reference [here](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes))
 2. Squashing commits (reference [here](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History) and [here](https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git))
 3. Reverting history (reference [here](https://gist.github.com/gunjanpatel/18f9e4d1eb609597c50c2118e416e6a6) and [here](https://stackoverflow.com/questions/1270514/undoing-a-git-push))
 4. Rebasing (reference [here](https://git-scm.com/book/en/v2/Git-Branching-Rebasing))
 5. Cherry-picking (reference [here](https://git-scm.com/docs/git-cherry-pick) and [here](https://git-scm.com/docs/git-cherry-pick))
+6. Learn Monorepos in Git (reference [here](https://www.atlassian.com/git/tutorials/monorepos))
