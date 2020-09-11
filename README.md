@@ -1,6 +1,6 @@
 # ECE DevOps course
 
-Materials for the DevOps course for ECE students.
+Materials for the DevOps course for ECE students
 
 ## Modules
 
