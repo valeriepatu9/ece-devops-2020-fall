@@ -17,9 +17,8 @@ Infrastructure as code (IaC) is a type of IT setup wherein developers or operati
 
 ## Labs
 
-1. Prepare virtual environment with Vagrant
-2. Provision a VM using Ansible 
-3. Complete the GitLab installation
+1. Part 1 - Using Vagrant with Shell Provisioner
+2. Part 2 - GitLab installation using Vagrant and Ansible Provisioner
 
 [Go to the labs](labs.md)
 

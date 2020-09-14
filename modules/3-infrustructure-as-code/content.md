@@ -110,6 +110,10 @@ Benefits:
 - easy to configure
 - portable
 
+## Vagrant workflow
+
+![Vagrant workflow](image/vagrant-workflow.png)
+
 ## Vagrant components
 
 - **host** and **guest** machines 
@@ -131,15 +135,11 @@ Benefits:
 - `vagrant ssh VM_NAME` - SSH as the vagrant user
 - `vagrant halt` - stop the VMs
 
-## Cloud provisioning with Terraform
+## Vagrant Provisioners
 
-- By HashiCorp (same company as Vagrant)
-- Manage all kind of Cloud objects:
-  - Machines/Containers
-  - Networks
-  - Services
-  - Clusters
-- Work with all Cloud providers: Azure, AWS, GCP, Alibaba Cloud ...
+Provisioners in Vagrant allow you to automatically install software, alter configurations, and more on the machine as part of the `vagrant up` process.
+
+[Read more about Vagrant Provisioning](https://www.vagrantup.com/docs/provisioning)
 
 ## Provisioning with Ansible 
 
@@ -215,3 +215,13 @@ ok: [server] => {
 ```
 
 [Read more](https://docs.ansible.com/ansible/latest/user_guide/playbooks_templating.html) about Jinja2 templating.
+
+## Cloud provisioning with Terraform
+
+- By HashiCorp (same company as Vagrant)
+- Manage all kind of Cloud objects:
+  - Machines/Containers
+  - Networks
+  - Services
+  - Clusters
+- Work with all Cloud providers: Azure, AWS, GCP, Alibaba Cloud ...
