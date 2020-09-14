@@ -104,6 +104,7 @@ For example:
 1. To configure the `/etc/hosts` file replace in the `Vagrantfile` with this:
 
 ```ruby
+# Start provisioning
 config.vm.provision "shell",
   inline: "echo '127.0.0.1  mydomain-1.local' >> /etc/hosts"
 ```
@@ -111,6 +112,7 @@ config.vm.provision "shell",
 2. To print a current date into the `/etc/vagrant_provisioned_at` file replace in the `Vagrantfile` with this:
 
 ```ruby
+# Start provisioning
 $script = <<-SCRIPT
 echo I am provisioning...
 date > /etc/vagrant_provisioned_at
