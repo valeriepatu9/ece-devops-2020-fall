@@ -19,10 +19,14 @@ This workshop can be done **on your own, or in groups of 2/3 people**.
       ```bash
       Disable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V-All
       ```
-4. Download the `centos/7` Vagrant box for the **Virtualbox provider**:
+4. Download the `centos/7` Vagrant box for the **Virtualbox provider**, run:
 
   ```bash
-  $ vagrant box add centos/7
+  vagrant box add centos/7
+  ```
+  
+  It will output:
+  ```bash
   
   ==> box: Loading metadata for box 'centos/7'
      box: URL: https://vagrantcloud.com/centos/7
