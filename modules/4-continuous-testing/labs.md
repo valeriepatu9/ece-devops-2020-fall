@@ -4,26 +4,25 @@ Continuous testing
 
 ## Objectives
 
+1. Use prepared User API application and run tests
+2. Using test driven development (TDD) create GET user method
 
 ## Before starting
 
-1. Install Redis
+1. Install Redis dababase
 
-Follow the quick start tutorial:
-https://redis.io/topics/quickstart
+- Windows: https://redislabs.com/ebook/appendix-a/a-3-installing-on-windows/a-3-2-installing-redis-on-window/
+- MacOS: `brew install redis` or https://redis.io/topics/quickstart
+- Linux: https://redis.io/topics/quickstart
 
-**(Optional) On MacOS**: use Homebrew to install Redis:
-```
-brew install redis
-```
-
-After installation there must be available the commands:
+After installation start Redis server:
 
 ```bash
-# To start Redis server
 redis-server
+```
 
-# Test if Redis server is running (run in a new terminal window)
+Test if Redis server is running (run in a new terminal window)
+```bash
 redis-cli ping
 # Should answer with "PONG"
 ```
