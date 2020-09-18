@@ -27,9 +27,13 @@ redis-cli ping
 # Should answer with "PONG"
 ```
 
+2. Install an **IDE or a text editor**, for example, [Atom](https://atom.io/) or [VS Code](https://code.visualstudio.com/)
+
+3. Install **NodeJS**: https://nodejs.org/
+
 ## 1. Use prepared User API application and run tests
 
-Go to `asssets/userapi` folder and explore the project:
+Go to `assets/userapi` folder and explore the project:
 
 ```
 cd modules/4-continuous-testing/assets/userapi
