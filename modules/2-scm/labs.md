@@ -1,4 +1,6 @@
-# Labs - Introduction to Git
+# Labs
+
+Introduction to Git
 
 ## Objectives
 
