@@ -4,12 +4,17 @@ const chaiHttp = require('chai-http')
 
 chai.use(chaiHttp)
 
+let client
+
 describe('Users REST API', () => {
+
+  before(() => {
+    client = require('../src/dbClient')
+  })
   
   after(()=> {
-    app.close(() => {
-      console.log('Http server closed.');
-    })
+    app.close()
+    client.quit()
   })
 
   describe('POST /user', () => {
@@ -25,6 +30,27 @@ describe('Users REST API', () => {
         .send(user)
         .then((res) => {
           chai.expect(res).to.have.status(201)
+          chai.expect(res.body.status).to.equal('success')
+          chai.expect(res).to.be.json
+          done()
+        })
+        .catch((err) => {
+           throw err
+        })
+    })
+    
+    it('pass wrong parameters', (done) => {
+      const user = {
+        firstname: 'Sergei',
+        lastname: 'Kudinov'
+      }
+      chai.request(app)
+        .post('/user')
+        .send(user)
+        .then((res) => {
+          chai.expect(res).to.have.status(400)
+          chai.expect(res.body.status).to.equal('error')
+          chai.expect(res).to.be.json
           done()
         })
         .catch((err) => {

@@ -10,7 +10,9 @@ client.on("error", (err) => {
   console.error(err)
 })
 
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({
+  extended: false
+}))
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => res.send('Hello World!'))
@@ -21,5 +23,6 @@ const server = app.listen(port, (err) => {
   if (err) throw err
   console.log("Server listening the port " + port)
 })
+
 
 module.exports = server
