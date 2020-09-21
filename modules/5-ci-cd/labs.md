@@ -53,7 +53,9 @@ Under the "Deploy tab":
   - sync the app with the GitHub repository
   - enable option "Automatic deploys / Wait for CI to pass before deploy"
 
-3. Add the Redis service to Heroku deployment - https://elements.heroku.com/addons/heroku-redis
+3. Add Redis service to Heroku deployment - https://elements.heroku.com/addons/heroku-redis
+
+**Note!** Redis service on Heroku is free, but it requires adding credit card information. Considering this limitation we will not run Redis on Heroku, and the application will be partially not working (it will print the "Hello world!" message on the home page, but the user API will not work)
 
 4. Configure `.travis.yml` with Heroku
 
