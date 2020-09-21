@@ -1,5 +1,5 @@
 const { expect } = require('chai')
-const users = require('../src/controllers/user')
+const userController = require('../src/controllers/user')
 
 describe('User', () => {
 
@@ -12,7 +12,7 @@ describe('User', () => {
         firstname: 'Sergei',
         lastname: 'Kudinov'
       }
-      users.create(user, (err, result) => {
+      userController.create(user, (err, result) => {
         expect(err).to.be.equal(null)
         expect(result).to.be.equal('OK')
         done()
@@ -24,7 +24,7 @@ describe('User', () => {
         firstname: 'Sergei',
         lastname: 'Kudinov'
       }
-      users.create(user, (err, result) => {
+      userController.create(user, (err, result) => {
         expect(err).to.not.be.equal(null)
         expect(result).to.be.equal(null)
         done()
@@ -41,8 +41,8 @@ describe('User', () => {
   // describe('Get', ()=> {
   //   // TODO Create test for the get method
   //   it('get a user by username', (done) => {
-  //     // 1. Create a user
-  //     // 2. Check the result of the get method is correct
+  //     // 1. First, create a user to make this unit test independent from the others
+  //     // 2. Then, check if the result of the get method is correct
   //     done()
   //   })
   // })

@@ -57,14 +57,23 @@ Start application:
 npm start
 ```
 
-## 2. Using test driven development (TDD) create GET user method
+## 2. Using test driven development (TDD) create GET user functionality
 
-Create a REST API GET `user` method that retrieves user information form database
+Create a REST API GET `user` method that retrieves user information form database.
 
-1. Create unit test for `get` user controller method
-2. Create `get` user controller method
-3. Create API test for a GET user route
-4. Create GET user route
+**Hint!** The source code of the example application in the folder `modules/4-continuous-testing/assets/userapi` contains `TODO` comments in the places where you are supposed to make modifications to accomplish these steps.
+
+1. Create `get` user controller:
+  - Create 2 unit tests (in the file `modules/4-continuous-testing/assets/userapi/test/user.controller.js`):
+    - successfully get user
+    - can not get user when it is not exist
+  - Create the controller method (in the file `modules/4-continuous-testing/assets/userapi/src/controllers/user.js`)
+
+2. Create GET user REST API method:
+  - Create 2 API tests (in the file `modules/4-continuous-testing/assets/userapi/test/user.router.js`):
+    - successfully get user
+    - can not get user when it is not exist
+  - Create GET user route (in the file `modules/4-continuous-testing/assets/userapi/src/routes/user.js`)
 
 ## Bonus tasks
 

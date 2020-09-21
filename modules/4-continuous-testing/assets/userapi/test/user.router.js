@@ -6,7 +6,7 @@ chai.use(chaiHttp)
 
 let client
 
-describe('Users REST API', () => {
+describe('User REST API', () => {
 
   before(() => {
     client = require('../src/dbClient')

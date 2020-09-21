@@ -1,11 +1,11 @@
 const express = require('express')
-const user = require('../controllers/user')
+const userController = require('../controllers/user')
 
 const userRouter = express.Router()
 
 userRouter
   .post('/', (req, resp) => {
-    user.create(req.body, (err, res) => {
+    userController.create(req.body, (err, res) => {
       let respObj
       if(err) {
         respObj = {
