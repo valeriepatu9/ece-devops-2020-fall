@@ -2,6 +2,12 @@
 
 Continuous Integration & Continuous Delivery (Deployment) (CI/CD)
 
+## Before starting
+
+It is required for these labs to have an example application with automated tests. It is suggested to use the application created in the module 4 "Continuous testing". 
+
+1. Create a repository on GitHub containing the source files of the example application from the folder `modules/4-continuous-testing/assets/`.
+
 ## 1. CI part - using Travis CI
 
 1. Go to [travis-ci.com](https://travis-ci.com/) and sing up with GitHub account
