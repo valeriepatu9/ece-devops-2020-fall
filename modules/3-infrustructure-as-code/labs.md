@@ -81,33 +81,37 @@ vagrant halt
 vagrant destroy
 ```
 
-### 3. Check that everything is ok by connecting to the VM through SSH
+### 3. Check that everything is ok by connecting to the VM via SSH
+
+1. To enter inside the VM via SSH:
 
 ```bash
 vagrant ssh centos_server
 ```
+
+It will open a session in the VM and you can run any bash commands being inside the Linux VM (like `ls`, `pwd` , etc.) 
  
-Open VirtualBox (or VMware) and check the installed virtual machine.
+2. Open VirtualBox (or VMware) and check the installed virtual machine.
 
 ### 4. Play with different commands for Shell Provisioner
 
 Find more instructions [here](https://www.vagrantup.com/docs/provisioning/shell).
 
-After each change of the `Vagrantfile` run the provisioner using the command:
-
-```
-vagrant provision
-```
-
-For example:
-
-1. To configure the `/etc/hosts` file replace in the `Vagrantfile` with this:
+1. To configure the `/etc/hosts` file replace "Start provisioning" section in the `Vagrantfile` with this:
 
 ```ruby
 # Start provisioning
 config.vm.provision "shell",
   inline: "echo '127.0.0.1  mydomain-1.local' >> /etc/hosts"
 ```
+
+Then run:
+
+```
+vagrant provision
+```
+
+**Note!** You need to run it with your laptop OS terminal, not being inside the VM via SSH.
 
 2. To print a current date into the `/etc/vagrant_provisioned_at` file replace in the `Vagrantfile` with this:
 
@@ -119,6 +123,12 @@ date > /etc/vagrant_provisioned_at
 SCRIPT
 
 config.vm.provision "shell", inline: $script
+```
+
+Then run:
+
+```
+vagrant provision
 ```
 
 ## Part 2 - GitLab installation using Vagrant and Ansible Provisioner 
@@ -147,7 +157,11 @@ It will take 5-10 min to install all the necessary software including required p
 
 ### 3. Test the installation 
 
-Test by connecting to http://20.20.20.2 (step 3 of the [GitLab installation doc](https://about.gitlab.com/install/#centos-7)):
+To test the installation of GitLab you can just open a URL in a browser and make sure it answers with any GitLab page (this is a step 3 of the [GitLab installation doc](https://about.gitlab.com/install/#centos-7)).
+
+So, open in your browser the URL - http://20.20.20.2
+
+Once it is open the login page you can login and explore GitLab:
 
  1. Choose a password
  2. Login as the user `root` using the password
