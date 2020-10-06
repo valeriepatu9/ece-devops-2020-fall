@@ -64,16 +64,16 @@ Create a REST API GET `user` method that retrieves user information form databas
 **Hint!** The source code of the example application in the folder `modules/4-continuous-testing/assets/userapi` contains `TODO` comments in the places where you are supposed to make modifications to accomplish these steps.
 
 1. Create `get` user controller:
-  - Create 2 unit tests (in the file `modules/4-continuous-testing/assets/userapi/test/user.controller.js`):
+  - Create **2 unit tests** (in the file `modules/4-continuous-testing/assets/userapi/test/user.controller.js`):
     - successfully get user
     - can not get user when it is not exist
-  - Create the controller method (in the file `modules/4-continuous-testing/assets/userapi/src/controllers/user.js`)
+  - Create **the controller method** (in the file `modules/4-continuous-testing/assets/userapi/src/controllers/user.js`)
 
 2. Create GET user REST API method:
-  - Create 2 API tests (in the file `modules/4-continuous-testing/assets/userapi/test/user.router.js`):
+  - Create **2 API tests** (in the file `modules/4-continuous-testing/assets/userapi/test/user.router.js`):
     - successfully get user
     - can not get user when it is not exist
-  - Create GET user route (in the file `modules/4-continuous-testing/assets/userapi/src/routes/user.js`)
+  - Create **GET user route** (in the file `modules/4-continuous-testing/assets/userapi/src/routes/user.js`)
 
 ## Bonus tasks
 
