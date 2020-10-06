@@ -2,11 +2,17 @@
 
 **NOTE! This is not a final version of the project description. It might be updated before December 2020.**
 
-The DevOps project is based on all the labs passed and students are allowed to use them. Work on a project can be carried out by 1 student or a team of 2 or a maximum of 3 students.
-
 ## Deadline
 
 To be set ...
+
+## Opportunities
+
+1. The DevOps project is based on all the labs passed during the course, it is allowed to use them.
+
+2. Work on the project can be carried out by 1 student or a team of 2 or a **maximum of 3 students**.
+
+3. You are allowed to collaborate with students from another group.
 
 ## Instructions
 
