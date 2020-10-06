@@ -1,6 +1,6 @@
 # Project (NOT FINAL!)
 
-**NOTE! This is not a final version of the project description. It might be updated before December 2020.**
+**NOTE! This is not the final version of the project description. It can be updated until December 2020.**
 
 ## Deadline
 
