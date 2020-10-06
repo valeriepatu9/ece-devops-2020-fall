@@ -45,11 +45,11 @@ Configure and apply CI/CD (including deployment) pipeline using any platforms (G
 
 **Note!** You must [ignore](https://docs.docker.com/engine/reference/builder/#dockerignore-file) all the files and folders that do not need to be included in the image.
 
-### 4. Make container orchestration using Docker Compose
+### 5. Make container orchestration using Docker Compose
 
 1. Create a `docker-compose.yml` file with that will start your application
 
-### 5. Make docker orchestration using Kubernetes
+### 6. Make docker orchestration using Kubernetes
 
 1. Install Kubernetes cluster using Minikube
 2. Create a Kubernetes Manifest yaml files:
@@ -57,14 +57,14 @@ Configure and apply CI/CD (including deployment) pipeline using any platforms (G
   - services
   - persistent volume and persistent volume claim
 
-### 6. Make a service mesh using Istio
+### 7. Make a service mesh using Istio
 
 1. Deploy your application using Istio
 2. Create configuration:
   - route requests between 2 different versions of your app
   - traffic shifting between 2 different versions of your app
 
-### 7. Describe your project in the `README.md` file
+### 8. Describe your project in the `README.md` file
 
 1. List of all the work performed (briefly, describing features and bonus tasks).
 
