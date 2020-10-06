@@ -124,14 +124,14 @@ List of bonus tasks proposed:
 
 ## How to send a project for evaluation?
 
-1. Send an email to [sergei@adaltas.com](mailto:sergei@adaltas.com)
+**ATTENTION!** Make sure your repository is **PRIVATE** and **you have sent an invitation** to GitHub account - https://github.com/sergkudinov. Otherwise, **if it isn't PRIVATE the final grade will be reduced to 0**.
+
+After you have sent the invitation, send an email to [sergei@adaltas.com](mailto:sergei@adaltas.com) containing following:
 
   - **Subject format:** "ECE - DevOps project - \<LASTNAME Firstname\> - \<Group number\>"
-  - **Be sure you have included to the email:**
-    - A link to the repository on GitHub/GitLab
-    - List of authors and the group number
-
-2. **Attention!** Make sure your repository is **PRIVATE** and **you have sent an invitation** to the GitHub account - https://github.com/sergkudinov. Otherwise, if it isn't PRIVATE the final grade will be **reduced to 0**.
+  - **Message:**
+    - **The link to the repository** on GitHub/GitLab
+    - List of authors and **the group number**
 
 ## Grading system
 
