@@ -7,7 +7,7 @@
 - Improved user experience
 - Minimization or elimination of business disruption and its costs
 
-![Read more](https://www.ibm.com/cloud/learn/continuous-testing)
+[Read more](https://www.ibm.com/cloud/learn/continuous-testing)
 
 ## Types of tests
 
@@ -36,6 +36,10 @@
 - Use production-like database
 - UI testing
 - Acceptance testing
+
+## Example
+
+![Testing example](image/testing.jpg)
 
 ## Test coverage
 
