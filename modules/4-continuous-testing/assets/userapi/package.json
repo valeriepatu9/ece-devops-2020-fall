@@ -1,14 +1,14 @@
 {
-  "name": "ece-userapi-redis",
+  "name": "ece-userapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "User API web application",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
     "test": "./node_modules/.bin/mocha test/*.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sergei Kudinov",
+  "license": "",
   "dependencies": {
     "express": "^4.17.1",
     "mixme": "^0.3.5",
@@ -19,7 +19,6 @@
     "chai-http": "^4.3.0",
     "eslint": "^7.9.0",
     "eslint-plugin-mocha": "^8.0.0",
-    "express-swagger-generator": "^1.1.17",
     "mocha": "^7.0.1"
   }
 }
