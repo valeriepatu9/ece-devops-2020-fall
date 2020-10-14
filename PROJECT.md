@@ -32,7 +32,7 @@ Create a web application on any programming language (NodeJS, Java, Ruby, Python
 
 Configure and apply CI/CD (including deployment) pipeline using any platforms (GitLab CI/CD, Jenkins, Travis CI, Netlify, Heroku etc.).
 
-**Note!** If a chosen deployment platform (like Heroku) requires any subscription to make use their database service to connect to your app, then you can skip usage this service. In this case you application won't be running properly, but it must successfully display the homepage. 
+**Note!** If the chosen deployment platform (like Heroku) requires any subscription to make use their database service to connect to your app, then you can skip usage this service. In this case you application won't be running properly, but it must successfully display the homepage. 
 
 ### 3. Configure and provision a virtual environment and run your application using IaC approach
 
@@ -107,7 +107,8 @@ istio/
 README.md
 CHANGELOG.md
 Dockerfile
-<Other configuration files>
+.travis.yml
+<Other configuration files like: package.json>
 ...
 ```
 

@@ -1,5 +1,9 @@
 # Continuous Integration & Continuous Delivery (CI/CD)
 
+## Simple deployment
+
+![Simple deployment](image/simple-deployment.png)
+
 ## What is it?
 
 **Continuous Integration (CI)** - a practice in which members of a team integrate their work frequently.
@@ -53,14 +57,18 @@ Takes care of the work (that you would otherwise need to perform manually):
 - Jenkins
 - ...
 
-## Registries
+## Deliver to Registries
 
-Types:
+We can **deliver** new releases of software to registries.
 
-- public registries
-- private registries
+**Registry** - is a software-package hosting service, that allows you to host your packages and code in one place.
 
-### Package registries
+Registry types:
+
+- public ()
+- private
+
+### Example public package registries
 
 - [NPM for JavaScript (NodeJS)](https://www.npmjs.com/)
 - [MVN Repository for Java](https://mvnrepository.com/)
@@ -79,11 +87,11 @@ pip install PACKAGE_NAME
 pip3 install PACKAGE_NAME
 ```
 
-### Image registries
+### Example public Image registry
 
 - [Docker Hub](https://hub.docker.com/)
   
-### Box registries for virtual machines
+### Example box registry for virtual machines
   
 - [Vagrant Cloud](https://app.vagrantup.com/boxes/search)
   
