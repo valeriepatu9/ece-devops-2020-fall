@@ -53,7 +53,7 @@ Configure and apply CI/CD (including deployment) pipeline using any platforms (G
 
 ### 5. Make container orchestration using Docker Compose
 
-1. Create a `docker-compose.yml` file with that will start your application
+1. Create `docker-compose.yml` file that will start your application
 
 ### 6. Make docker orchestration using Kubernetes
 
