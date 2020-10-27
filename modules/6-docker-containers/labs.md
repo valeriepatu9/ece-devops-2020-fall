@@ -39,7 +39,8 @@ Before you can start the lab, you have to:
      ```
      docker build -t hello-world-docker .
      ```
-     Don't forge the `.` at the end of the command. It is here to tell Docker it should look for a Dockerfile in the current directory. `-t` tags the built container with the name you want, here `hello-world-docker`
+     - Don't forge the `.` at the end of the command. It is here to tell Docker it should look for `Dockerfile` in the current directory. 
+     - `-t` tag - to built container with the name you want (here `hello-world-docker`)
 4. Check if your Docker container appears in the local Docker images:
    ```
    docker images
