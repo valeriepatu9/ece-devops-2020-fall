@@ -14,10 +14,17 @@
 
 ## Resources
 
-In the [`hello-world-docker`](assets/hello-world-docker) directory, you will find:
-- A `server.js` which is the code for a simple "Hello World" [Node.js](https://nodejs.org/) web app
-- A `package.json` that describes the Node.js web app and its dependencies
-- A `Dockerfile` which describes the previous Node.js web app as a Docker container
+**[`hello-world-docker`](assets/hello-world-docker) directory contains:**
+- `server.js` - the code for a simple "Hello World" [Node.js](https://nodejs.org/) web app
+- `package.json` - describes the Node.js web app and its dependencies
+- `Dockerfile` - describes the previous Node.js web app as a Docker container
+
+**[`hello-world-docker-compose`](assets/hello-world-docker-compose) directory contains:**
+- `server.js` - the code for a simple "Hello World" [Node.js](https://nodejs.org/) web app
+- `dbClient.js` - the module that creates a connection to Redis.
+- `package.json` - describes the Node.js web app and its dependencies
+- `Dockerfile` - describes the previous Node.js web app as a Docker container
+- `docker-compose.yaml` - describes Docker Compose configuration
 
 ## 1. Install Docker
 
@@ -93,9 +100,9 @@ Before you can start the lab, you have to:
 ## 5. Build and run a multiple container app with Docker Compose
 
 1. Docker Compose should be included in your Docker installation (on Windows and Mac at least), if not install it using the official [instructions](https://docs.docker.com/compose/install/)
-2. Navigate to the `hello-world-docker-compose` directory in the cloned repository
+2. Navigate to the [`hello-world-docker-compose`](assets/hello-world-docker-compose) directory
 3. Build the Docker image inside this directory with the name on your choice
-4. Fill the missing part of the `docker-compose.yaml` file to make it use the container you just built
+4. Fill the missing part of the `docker-compose.yaml` file to make it use the container you just built. You can take an inspiration from [that example](content.md#docker-compose-example).
 5. Start the containers with `docker-compose up`
 6. Visit `localhost:5000` in your web browser and hit refresh a couple times
 7. Stop the containers by running `CTRL+C` in the previous terminal
@@ -108,7 +115,7 @@ Before you can start the lab, you have to:
    2. Delete the containers again
 10. Make the necessary changes in the Docker compose file so that when you delete and create the containers again the counter keeps its value
 
-    **Hint**: Use volumes, the redis container stores its data in the `/data` directory
+**Hint**: Use [Docker Volumes](https://docs.docker.com/storage/volumes/), the Redis container stores its data in the `/data` directory
 
 ## Bonus tasks
 
