@@ -109,3 +109,7 @@ Before you can start the lab, you have to:
 10. Make the necessary changes in the Docker compose file so that when you delete and create the containers again the counter keeps its value
 
     **Hint**: Use volumes, the redis container stores its data in the `/data` directory
+
+## Bonus tasks
+
+1. Run Wordpress with MySQL using Docker Compose
