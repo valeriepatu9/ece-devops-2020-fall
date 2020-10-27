@@ -2,7 +2,7 @@
 
 ## Objectives 
 
-1. Install [Docker](https://www.docker.com/get-started)
+1. Install Docker
 2. Write a `Dockerfile` and build a Docker image
 3. Run a Docker container with multiple options
 4. Share your Docker container with a classmate
