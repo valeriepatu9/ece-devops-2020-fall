@@ -167,6 +167,8 @@ A three-step process:
 
 ## Docker Compose example
 
+Installing Wordpress website.
+
 ```
 version: '3.3'
 
@@ -202,7 +204,7 @@ volumes:
 
 Base commands:
 
-`docker-compose up` - Create and start containers
-`docker-compose down` - Stop and remove containers, networks, images, and volumes
-`docker-compose exec` - Execute a command in a running container
-`docker-compose scale` - Set number of containers for a service
+- `docker-compose up` - Create and start containers
+- `docker-compose down` - Stop and remove containers, networks, images, and volumes
+- `docker-compose exec` - Execute a command in a running container
+- `docker-compose scale` - Set number of containers for a service
