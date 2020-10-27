@@ -9,17 +9,14 @@
 - **Isolation**
   Ability to virtualize CPU, memory, storage, and network resources at the OS-level, providing developers with a sandboxed view of the OS logically isolated from other applications.
 
-## Containers
+## What are containers?
 
-**Container** - is a standardized unit of software that:
-- allows developers to isolate their application from its environment.
-- packages up code and all its dependencies, so the application runs quickly and reliably from one computing environment to another.
-
-**Container platforms:**
-
-- Docker
-- LXC (Linux Containers)
-- rkt (CoreOS Rocket)
+- Standardized unit of software that allows developers to isolate their application from its environment.
+- Packages code and all its dependencies, so the application runs quickly and reliably from one computing environment to another.
+- Container platforms:   
+  - **Docker**
+  - LXC (Linux Containers)
+  - rkt (CoreOS Rocket)
 
 ## Docker container
 
@@ -28,7 +25,7 @@
 - Easy to use
 - An excellent building block (for software delivery according to DevOps perspectives)
 
-## Benefits
+## Docker
 
   - **Portable anywhere** (Linux, Windows, Data center, Cloud, Serverless, etc.)   
   Docker created the industry standard for containers.
@@ -36,6 +33,8 @@
   Containers share the machine’s OS system kernel and therefore do not require an OS per application, driving higher server efficiencies and reducing server and licensing costs.
   - **Secure**   
   Applications are safer in containers and Docker provides the strongest default isolation capabilities in the industry.
+
+## Container vs Virtual Machines vs Bare metal
 
 ![Deployment evolution](image/container_evolution.png)
 
