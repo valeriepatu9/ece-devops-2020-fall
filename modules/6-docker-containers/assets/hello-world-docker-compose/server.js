@@ -4,7 +4,6 @@ const express = require('express');
 const client = require('./dbClient');
 
 const PORT = 8080;
-const HOST = '127.0.0.1';
 
 function get_hit_count(callback) {
   client.incr('hits', (err) => {
@@ -22,5 +21,5 @@ app.get('/', (req, res) => {
   })
 });
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+app.listen(PORT);
+console.log(`Running on http://localhost:${PORT}`);
