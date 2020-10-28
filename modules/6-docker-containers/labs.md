@@ -86,12 +86,16 @@ Before you can start the lab, you have to:
    docker tag hello-world-docker <DOCKER_ACCOUNT_NAME>/<CUSTOM_IMAGE_NAME>
    ```
    where `DOCKER_ACCOUNT_NAME` - is your account on Docker Hub, `CUSTOM_IMAGE_NAME` - custom name of the image.
-5. Push the docker image to Docker Hub:
+5. Login to Docker Hub from your terminal:
+   ```
+   docker login
+   ```
+6. Push the docker image to Docker Hub:
    ```
    docker push <DOCKER_ACCOUNT_NAME>/<CUSTOM_IMAGE_NAME>
    ```
-6. See if you can find the image in your [repositories](https://hub.docker.com/repositories) in the Docker Hub
-7. Ask a classmate to retrieve your Docker container and run it:
+7. See if you can find the image in your [repositories](https://hub.docker.com/repositories) in the Docker Hub
+8. Ask a classmate to retrieve your Docker container and run it:
    ```
    docker pull <DOCKER_ACCOUNT_NAME>/<CUSTOM_IMAGE_NAME>
    docker run -p 12345:8080 -d <DOCKER_ACCOUNT_NAME>/<CUSTOM_IMAGE_NAME>
