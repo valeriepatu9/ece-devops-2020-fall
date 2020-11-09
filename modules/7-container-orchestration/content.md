@@ -12,7 +12,7 @@
 - scaling
 - networking
 
-## Use cases
+## Containers complexity
 
 - Provisioning and deployment
 - Configuration and scheduling 
