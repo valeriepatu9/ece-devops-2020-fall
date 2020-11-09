@@ -68,42 +68,7 @@ Consists of:
 - Service
 - ...
 
-## Kubernetes object management
-
-| Management technique             | Operates on          |Recommended environment |
-|----------------------------------|----------------------|------------------------|
-| Imperative commands              | Live objects         | Development projects   |
-| Imperative object configuration  | Individual files     | Production projects    |
-| Declarative object configuration | Directories of files | Production projects    |
-
-**Examples:**
-
-Imperative commands:
-```
-kubectl create deployment nginx --image nginx
-```
-
-Imperative object configuration:
-
-```
-kubectl create -f nginx.yaml
-kubectl delete -f nginx.yaml -f redis.yaml
-```
-
-Declarative object configuration:
-```
-kubectl diff -f configs/
-kubectl apply -f configs/
-```
-
-[Read more](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/)
-
 ## Kubernetes object
-
-Each object contains 2 nested objects:
-
-- `spec` - description of the object, **desired state**
-- `status` - **current state**
 
 Example of `.yaml` (or `.yml`) file:
 
@@ -162,6 +127,36 @@ spec:
 
 [Read more](https://kubernetes.io/docs/concepts/workloads/pods/)
 
+## Kubernetes object management
+
+| Management technique             | Operates on          |Recommended environment |
+|----------------------------------|----------------------|------------------------|
+| Imperative commands              | Live objects         | Development projects   |
+| Imperative object configuration  | Individual files     | Production projects    |
+| Declarative object configuration | Directories of files | Production projects    |
+
+**Examples:**
+
+Imperative commands:
+```
+kubectl create deployment nginx --image nginx
+```
+
+Imperative object configuration:
+
+```
+kubectl create -f nginx.yaml
+kubectl delete -f nginx.yaml -f redis.yaml
+```
+
+Declarative object configuration:
+```
+kubectl diff -f configs/
+kubectl apply -f configs/
+```
+
+[Read more](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/)
+
 ## Storage in Pods
 
 Kubernetes volumes:
@@ -190,3 +185,9 @@ Volume types:
   Covered by Ingress
 
 [Read more](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
+
+## Minikube
+
+- Tool that makes it easy to run Kubernetes locally
+- Runs a single-node Kubernetes cluster inside a Virtual Machine (VM)
+- Perfect to get started with Kubernetes or develop locally
