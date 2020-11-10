@@ -9,6 +9,7 @@ Container orchestration with Kubernetes
 3. Learn to expose a Kubernetes service to the outside
 4. Learn to scale up and down a Kubernetes deployment
 5. Run a multiple pod application in Kubernetes
+6. Deploy an app using Manifest yaml files
 
 ## 1. Install Minikube
 
