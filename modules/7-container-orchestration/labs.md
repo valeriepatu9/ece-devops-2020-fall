@@ -80,6 +80,12 @@ minikube status
    ```
 4. Using the answers of questions 2. and 3., open your web browser and try to reach the web app.
 
+**Note!** If you are using Docker driver in Minikube, you must create a tunnel to the cluster node (that is running as a Docker container). Run the command (replace `$SERVICE_NAME` with your service name):
+
+```
+minikube service $SERVICE_NAME
+```
+
 ## 4. Learn to scale up and down a Kubernetes deployment
 
 1. Scale up your deployment to a total number of 5 pods with:
