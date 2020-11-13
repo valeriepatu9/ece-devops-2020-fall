@@ -2,8 +2,8 @@
 
 **Requirements for Container-Based applications:**
 
-- to manage containers
-- to ensure that there is no downtime (SLA requirement)
+- manage containers
+- ensure that there is no downtime (SLA requirement)
   
 **Container orchestration tools provide:**
 
@@ -68,7 +68,16 @@ Consists of:
 - Service
 - ...
 
-## Kubernetes object
+[Read more about Kubernetes objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
+
+## Kubernetes Objects: Pods
+
+**Pods** are (an abstraction of containers):
+
+- the smallest deployable units of computing
+- group of one or more containers (tightly coupled)
+- could be *replicated* (scaled horizontally)
+- ephemeral, disposable entities (The Pod remains on the node until the Pod finishes execution, the Pod object is deleted, the Pod is evicted for lack of resources, or the node fails.)
 
 Example of `.yaml` (or `.yml`) file:
 
@@ -89,19 +98,13 @@ spec:
     emptyDir: {}
 ```
 
-[Read more](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
+## Kubernetes Objects: Deployment
 
-## Pods
+Provides declarative updates for Pods (an abstraction of Pods).
 
-**Pods** are:
+You describe a **desired state** in a Deployment, and the Deployment Controller changes the actual state to the desired state.
 
-- the smallest deployable units of computing
-- group of one or more containers (tightly coupled)
-- could be *replicated* (scaled horizontally)
-- ephemeral, disposable entities   
-  The Pod remains on the node until the Pod finishes execution, the Pod object is deleted, the Pod is evicted for lack of resources, or the node fails.
-
-`PodTemplate` example:
+Example:
 
 ```
 apiVersion: apps/v1
@@ -127,6 +130,28 @@ spec:
 
 [Read more](https://kubernetes.io/docs/concepts/workloads/pods/)
 
+## Kubernetes Objects: Service
+
+An abstract (abstraction of network) way to expose an application running on a set of Pods **as a network service**.
+
+With Kubernetes you don't need to modify your application to use an unfamiliar service discovery mechanism. Kubernetes gives Pods their own IP addresses and a single DNS name for a set of Pods, and can load-balance across them.
+
+Example:
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9376
+```
+
 ## Kubernetes object management
 
 | Management technique             | Operates on          |Recommended environment |
@@ -151,11 +176,22 @@ kubectl delete -f nginx.yaml -f redis.yaml
 
 Declarative object configuration:
 ```
-kubectl diff -f configs/
-kubectl apply -f configs/
+kubectl apply -f path/to/folder/
 ```
 
 [Read more](https://kubernetes.io/docs/concepts/overview/working-with-objects/object-management/)
+
+## Organizing resource configurations
+
+```
+project/k8s/development
+├── deployment
+│   └── my-deployment.yaml
+└── service
+    └── my-service.yaml
+```
+
+[Read more about managing resources](https://kubernetes.io/docs/concepts/cluster-administration/manage-deployment/)
 
 ## Storage in Pods
 
@@ -171,7 +207,7 @@ Volume types:
 
 [Read more](https://kubernetes.io/docs/concepts/storage/volumes/)
 
-## Pod networking
+## Networking
 
 **Communications types:**
 

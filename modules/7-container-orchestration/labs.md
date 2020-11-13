@@ -4,7 +4,7 @@ Container orchestration with Kubernetes
 
 ## Objectives
 
-1. Install [Minikube](https://github.com/kubernetes/minikube)
+1. Install Minikube
 2. Learn to use `kubectl` commands
 3. Learn to expose a Kubernetes service to the outside
 4. Learn to scale up and down a Kubernetes deployment
@@ -13,7 +13,7 @@ Container orchestration with Kubernetes
 
 ## 1. Install Minikube
 
-Install [Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) following the instructions depending on your OS.
+[Install Minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) following the instructions depending on your OS.
 
 Start Minikube with:
 ```
