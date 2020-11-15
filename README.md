@@ -9,9 +9,9 @@ Materials for the DevOps course for ECE students.
 3. [Infrastructure as Code (IaC)](modules/3-infrustructure-as-code/index.md)
 4. [Continuous testing](modules/4-continuous-testing/index.md)
 5. [Continuous integration and delivery (CI/CD)](modules/5-ci-cd/index.md)
-6. [Containers with Docker](modules/6-docker-containers)
-7. [Container orchestration with Kubernetes](modules/7-container-orchestration)
-8. Advanced Kubernetes
+6. [Containers with Docker](modules/6-docker-containers/index.md)
+7. [Container orchestration with Kubernetes](modules/7-container-orchestration/index.md)
+8. [Storage in Kubernetes](modules/8-storage-in-kubernetes/index.md)
 9. Cloud native architecture
 10. DevOps in practice
 
