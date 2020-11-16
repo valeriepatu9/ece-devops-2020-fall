@@ -63,7 +63,7 @@ kubectl exec -it <POD_NAME> bash
 
 Run `curl localhost` (or `curl localhost/index.html`, because by default of Nginx it will point to `index.html` if you not specify what the file name)
 
-It will output the page of the 403 error, because there is no `index.html` file to respond with:
+It will output the page of the 403 error if there is no `index.html` file to respond with:
 
 ```
 <html>
@@ -71,6 +71,36 @@ It will output the page of the 403 error, because there is no `index.html` file 
 <body>
 <center><h1>403 Forbidden</h1></center>
 <hr><center>nginx/1.19.2</center>
+</body>
+</html>
+```
+
+Or it outputs the content of the file `index.html` if there is one:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+<style>
+    body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+<h1>Welcome to nginx!</h1>
+<p>If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required.</p>
+
+<p>For online documentation and support please refer to
+<a href="http://nginx.org/">nginx.org</a>.<br/>
+Commercial support is available at
+<a href="http://nginx.com/">nginx.com</a>.</p>
+
+<p><em>Thank you for using nginx.</em></p>
 </body>
 </html>
 ```
