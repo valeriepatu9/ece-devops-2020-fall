@@ -58,7 +58,7 @@ Configure and apply CI/CD (including deployment) pipeline using any platforms (G
 ### 6. Make docker orchestration using Kubernetes
 
 1. Install Kubernetes cluster using Minikube
-2. Create a Kubernetes Manifest yaml files:
+2. Create Kubernetes Manifest yaml files:
   - deployments
   - services
   - persistent volume and persistent volume claim

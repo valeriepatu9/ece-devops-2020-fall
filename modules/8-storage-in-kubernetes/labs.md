@@ -4,7 +4,7 @@
 
 1. Use `emptyDir` storage
 2. Use `hostPath` storage
-2. Use PersistentVolume
+3. Use PersistentVolume
 
 ## Before starting
 
