@@ -26,7 +26,7 @@ Create a web application on any programming language (NodeJS, Java, Ruby, Python
 - storage in Redis database
 - tests: unit, API, configuration, connection.
 
-**Note!** You are allowed to use the draft application located in the [assets](assets) folder, but you have to enrich it by at least completing all comment sections marked "TODO".
+**Note!** You are allowed to use the draft application located in the [assets/userapi](modules/4-continuous-testing/assets/userapi) folder, but you have to enrich it by at least completing all comment sections marked "TODO".
 
 ### 2. Apply CI/CD pipeline 
 
