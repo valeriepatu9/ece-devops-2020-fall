@@ -14,8 +14,9 @@ spec:
       labels:
         app: nginx-empty-dir
     spec:
-      volumes:
-        # TODO complete
+      volumes:  # TODO complete
+      - name: cache-volume
+        emptyDir: {}
       containers:
       - name: nginx-container
         image: nginx
@@ -24,3 +25,5 @@ spec:
             name: "http-server"
         volumeMounts:
           # TODO complete
+          - mountPath: /cache
+            name: cache-volume
