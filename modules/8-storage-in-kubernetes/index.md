@@ -16,3 +16,11 @@ On-disk files in a container are ephemeral, which presents some problems for non
 ## Labs
 
 [Go to the labs](labs.md)
+
+## References
+
+**Video:**
+
+- Kubernetes Volumes 1 - https://youtu.be/VB7vI9OT-WQ
+- Kubernetes Volumes 2 - https://youtu.be/OulmwTYTauI
+- Kubernetes Volumes 3 - https://youtu.be/X6Vkz-ny574
