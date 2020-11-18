@@ -124,7 +124,7 @@ Hello from Kubernetes storage!
   You can remove a pod using Kubernetes Dashboard that is started with `minikube dashboard` command or `kubectl delete pod/<POD_NAME>`.
 
 - When **container in a Pod is removed**, Kubernetes will create a new container and will mount existing `emptyDir` volume to it.   
-  You can enter to Minikube Node with `minikube ssh`, find the related container with `docker ps | grep <POD_NAME>` and kill it with `docker kill CONTAINER_ID`. 
+  Learn the Container ID with the command `kubectl describe pod/<POD_NAME>`. Then you can enter to Minikube Node with `minikube ssh` and manually remove the container with `docker rm -f CONTAINER_ID`.
 
 ## 2. Use `hostPath` storage
 
