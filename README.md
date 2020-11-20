@@ -12,7 +12,7 @@ Materials for the DevOps course for ECE students.
 6. [Containers with Docker](modules/6-docker-containers/index.md)
 7. [Container orchestration with Kubernetes](modules/7-container-orchestration/index.md)
 8. [Storage in Kubernetes](modules/8-storage-in-kubernetes/index.md)
-9. Cloud native architecture
+9. [Cloud-native applications](modules/9-cloud-native/index.md)
 10. DevOps in practice
 
 ## Structure
